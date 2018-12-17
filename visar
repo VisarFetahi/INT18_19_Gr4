@@ -1,12 +1,112 @@
-
 <!DOCTYPE html>
 <html>
-<head>
+    <head>
+   
+        <style>
+               
+   .boxlarge{
+       width:940px;display:flex; background-color:white;margin-left: auto;margin-right: auto;padding-bottom:40px;
+       padding-top:40px 
+            }
+      .box {
+             color:white;
+          width: 225px;height:280px;
+          background-color:black;
+          margin: 5px;
+        
+          
+         }
+        .top{
+          width:225px;height:140px
+          }
+        .bot{
+          background-color:grey;width:225px;height:140px
+          }
+        .letter{width:940px;height:200px;background-color:white;margin-left: auto;margin-right: auto;}
+        
+     
+         h2{padding:5px;margin:0px;}
+         p{padding:5px;margin:0px;}
+         img{width:100%}
+          .vija{width:500px;border:2px solid red;
+                   border-top-right-radius: 1000px 10px;
+                   border-top-left-radius: 1000px 10px;
+                   border-bottom-right-radius: 1000px 10px;
+                   border-bottom-left-radius: 1000px 10px;
+               margin-left: auto;margin-right: auto;}
+        </style>
+        
+        
+    </head>
+    <body>
+<div class="letter"> 
+    <h1></h1>
+</div>
 
-</head>
-<body>
+        <div class="vija"></div>
+   <div class="boxlarge">
 
-
-<h1>visar</h1>
-</body>
-<html>
+            
+             <div class="box">  
+                 <div class="top">
+                      <a href="#">
+                      <img src="C:\Users\Visar Fetahi\Desktop\images\newyork.jpg" width="225" height="140"  >
+                    </a>
+                 </div> 
+                 
+                 <div class="bot">
+                 
+                     <h2>visar</h2>
+                     <p>visariiiii</p>
+                 </div> 
+             </div>
+            
+       
+       
+            <div class="box"> 
+                <div class="top">
+                     <a href="#">
+                      <img src="C:\Users\Visar Fetahi\Desktop\images\newyork.jpg" width="225" height="140"  >
+                    </a>
+                </div>  
+                <div class="bot">
+                    <h2>visar</h2>
+                     <p>visariiiii</p>
+                </div> 
+            </div>
+             
+       
+       
+            <div class="box"> 
+                <div class="top">
+                       <a href="#">
+                      <img src="C:\Users\Visar Fetahi\Desktop\images\newyork.jpg" width="225" height="140"  >
+                    </a>
+                </div>  
+                <div class="bot">
+                    <h2>visar</h2>
+                    <p>visariiiii</p>
+                </div>
+            </div>
+             
+       
+       
+            <div class="box"> 
+                <div class="top">
+                       <a href="#">
+                      <img src="C:\Users\Visar Fetahi\Desktop\images\newyork.jpg" width="225" height="140"  >
+                    </a>
+                </div>  
+                <div class="bot">
+                    <h2>visar</h2>
+                    <p>visariiiii</p>
+                </div> 
+            </div>
+                          
+                          
+</div>
+ 
+     <div class="vija"></div>
+    </body>
+</html>
+        
