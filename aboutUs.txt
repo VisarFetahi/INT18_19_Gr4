@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AboutUS</title>
+    <link rel="stylesheet" href="AboutUS.css">
+    <!-- Fjolla AboutUS -->
+</head>
+<body>
+    <div id="wrapper">
+        <div>
+            <h3>ABOUT US</h3>
+            <br>
+            <img src="1.jpg" alt="About|US">
+            <br>
+            <p>Timepiece watches are crafted from the fines detail. Every component is designed, developed and produced in-house to the most exacting standards.</p>
+            <br>
+            <p><a style="text-decoration: none" href="">Read more &#187;</a></p>
+        </div>
+        <div>
+            <h3>LINK BLOCK</h3>
+            <ul id="arrow">
+                <li><a style="text-decoration: none" href=""> &#187; first link</a></li>
+                <li><a style="text-decoration: none" href=""> &#187; second link</a></li>
+                <li><a style="text-decoration: none" href=""> &#187; link</a></li>
+                <li><a style="text-decoration: none" href=""> &#187; forth link</a></li>
+                <li><a style="text-decoration: none" href=""> &#187; forth link</a></li>
+                <li><a style="text-decoration: none" href=""> &#187; fifth link</a></li>
+                <li><a style="text-decoration: none" href=""> &#187; sixth link</a></li>
+                <li><a style="text-decoration: none" href=""> &#187; seventh link</a></li>
+                <li><a style="text-decoration: none" href=""> &#187; seventh link</a></li>
+                <li><a style="text-decoration: none" href=""> &#187; eigth link</a></li>
+                <li><a style="text-decoration: none" href=""> &#187; ninth link</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>FROM THE BLOG</h3>
+            <div class="small">
+                <h3>TimePiece History</h3>
+                <p>Timepiece SA is a Swiss luxury watchmaker. Founded </p>
+                <br>
+                <p><a style="text-decoration: none" href="">Read more &#187;</a></p>
+            </div>
+            <div class="small">
+                <h3>TimePiece History</h3>
+                <p>Timepiece SA is a Swiss luxury watchmaker. Founded</p>
+                <br>
+                <p><a style="text-decoration: none" href="">Read more &#187;</a></p>
+            </div>
+        </div>
+        <div>
+            <h3>CONTACT US</h3>
+            <div class="small">
+            <p>TEL: xxxx xxxxxxxx</p>
+            <br>
+            <p>Fax: xxxxxxxx</p>
+            <br>
+            <p id="email">Email:<a style="text-decoration: none" href="">contact@mydomain.com</a></p>
+            </div>  
+            <div class="small">
+                <h3>Newsletter</h3>
+                <br>
+                <label class="form" for="name"></label>
+                <input type="text" id="name" name="name" placeholder="Name">
+                <br>
+                <label class="form" for="email"></label>
+                <input type="text" id="email" name="email" placeholder="Email">
+                <br> <br>
+                <button> Submit </button>
+            
+            </div>
+        </div>
+        <hr/>
+        <br><br>
+        <p id="thelast"><span id="grey">COPYRIGHT &COPY; 2013-All rights reserved- Timepiece</span></p>
+    </div>
+</body>
+</html>
