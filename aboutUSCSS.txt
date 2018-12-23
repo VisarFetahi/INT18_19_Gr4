@@ -1,0 +1,101 @@
+ *{
+     /* outline: 1px solid red; */
+     margin: 0px;
+     padding: 0px;
+ }
+#wrapper{
+    width: 1000px;
+    height: 400px;
+    background-color: #313131;
+}
+    #wrapper div{
+        color:	rgba(238, 245, 220, 0.856);
+        width: 210px;
+        height: 285px;
+        padding:10px;
+        display: inline-block;
+        margin-left:10px;
+        vertical-align: top;
+    }
+    #wrapper div p#email{
+        width:px;
+    }
+    #wrapper div img{
+        border:3px solid grey;
+        width: 210px;
+        height: 90px;
+    }
+    #wrapper div ul{
+        margin-top:10px;
+        font-size:12px;
+        height:243px;
+    }
+    #wrapper div.small{
+        margin-top:5px;
+        width: 190px;
+        height:106px;
+        margin-left:-10px;
+    }
+    #wrapper hr{
+        color: #ffffe6;
+        padding-top:20px;
+    }
+    #thelast{
+        margin-left:10px;
+    }
+    #grey{
+        color: #ffffe6;
+    }
+    @import "compass/css3";
+
+    div{
+    width: 240px;
+    height: 285px;
+    vertical-align: top;
+    }
+
+    h2 {
+    font: 400 10px/1.5 Helvetica, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
+    ul {
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    }
+
+    li {
+    font: 200 13px/1.5 Helvetica, Verdana, sans-serif;
+    border-bottom: 1px solid #12883a73;
+    ;
+    }
+
+    li:last-child {
+    border: none;
+    }
+
+    li a {
+    text-decoration: none;
+    color: #ccc;
+
+    -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+    transition: font-size 0.3s ease, background-color 0.3s ease;
+    display: block;
+    }
+
+    li a:hover {
+    font-size: 30px;
+    background: #12883a73;
+    }
+    .form{
+        background-color: rebeccapurple;
+    }
+    hr{
+        height:5px;
+    }
