@@ -181,8 +181,6 @@
             }
             #snow
             {
-                background: #e1e1e1;
-                background: #222222;
                 background: black;
                 position: absolute;
                 z-index: -1;
