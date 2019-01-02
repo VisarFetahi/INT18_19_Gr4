@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <link rel="stylesheet" href="css/Fisniku.css">
+           <link rel="stylesheet" href="css/Fjolla.css">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
+   
+        <style>
+   
+      .box {
+          color:black;
+          display:inline-block;
+          width: 300px;height:380px;
+          background-color:rgb(255,255,255);
+          margin-left:20px;
+          margin-bottom:20px;
+          text-align: center;
+          position: relative;
+     }
+            
+        .top{
+            width:300px;
+            height:200px;
+            position:relative;
+          }
+            
+            
+        .bot{
+          width:300px;
+            height:180px;
+          }
+            
+            p{
+             padding:7px;
+             margin:0px;
+             color:rgb(102, 102, 102);
+             font-size:16px;
+             text-align:center;
+            }
+       
+            
+            h1{
+                text-align:center;
+                margin:20px;
+                font-size: 29px;
+            }
+         
+            
+      .rating {
+          color:black;
+          text-align:center;
+          font-size:28px;margin:0px;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+            
+.rating > span {
+  display: inline-block;
+  position: relative;
+
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+    color: gold;
+}
+   
+  
+.hov:hover{ 
+    color:black;
+    background-color: rgba(255,255,255,1);
+
+    border-radius: 20px;
+    transition: .5s;
+    
+            }
+
+.hov{
+    text-align:center;
+    position: absolute;
+     top:110px;
+    width:25%;
+    right: 40px;
+    left:40px;
+    background-color: black;
+  color: white;
+  padding:10px;
+visibility: hidden;
+margin-left: auto;
+    margin-right: auto;
+    cursor:pointer;
+            }
+
+.top:hover > h4{
+    visibility: visible;
+            }
+         
+       .Rolex, .PatekPhilippe, .VacheronConstantin, .Hublot
+            {
+           width:1300px;
+           height:380px;
+           background-color:white;
+           margin-left: auto;
+           margin-right: auto;
+           display:flex;
+            }
+            
+
+        #Rolex ,#Hublot,#PatekPhilippe,#VacheronConstantin
+            {
+            text-align:center;
+            font-size:30px;
+            margin:0px;
+            padding:20px;
+            font-family:Georgia;
+            }
+.arabeska{
+    width:1000px;
+    height:150px;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+            }
+        </style>
+    </head>
+    <body>
+
+            <div class="topbar" >
+                <div class="contactNr">
+                    Call Us: xxxxxxxxxxxxxxxxxxxx
+                </div>
+                <div class="contactEm">
+                    Email Us: contact@mydomain.com
+                </div>    
+                <div style=" display:inline-block;float:right;"> 
+                <form class="searchbar" action="">
+                   
+                    <input type="text" placeholder="" name="search">
+                    <button type="submit">
+                        <span>
+                                    <i class="fa fa-search" aria-hidden="true" style="width:2px;height:2px;right:7px;position:relative;"></i>
+                        </span>
+                    </button>
+                
+                </form>
+                    </div> 
+            </div>
+            <div class="menu">
+                <div class="logo">
+                    <img src="images\timepiece.png" style="margin-left:50px;width:95px;height:95px;position:absolute">
+                </div> 
+                <ul class="main-nav">
+                    <li  class="elementetnav">
+                        <a href="" id="active">
+                            HOMEPAGE
+                        </a>
+                        <br>text here
+                    </li>
+                    <li  class="elementetnav">
+                        <a href="">
+                            STYLE DEMO
+                        </a>
+                        <br>text here
+                    </li>
+                    <li  class="elementetnav">
+                        <a href="">
+                            FULL WIDTH
+                        </a>
+                        <br>text here
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li  class="elementetnav">
+                        <a href="">
+                            PORTOFOLIO
+                        </a>
+                        <br>text here
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li  class="elementetnav">
+                        <a href="collections.html">
+                            Collections
+                        </a>
+                        <br>text here
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="elementetnav" >
+                        <a href="">
+                            DROPDOWN
+                        </a>
+                        <br>text here
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        <h1>My Cart</h1>
+ <div><img  class="arabeska" src="images\arabesque.png"></div>
+<h2  id="Rolex"  >Rolex</h2>
+        <div class="Rolex">
+ 
+ 
+             <div class="box" >  
+                 <div class="top"> <a href="#">
+                     
+                      
+                          <img src="images\YachtMaster.jpg" style="width:100%;height:100%" >
+                     </a>
+                     <h4 class="hov">Buy now</h4>
+                 </div> 
+                 
+                 <div class="bot">
+                 
+                     <h2><em>Yacht Master</em></h2>
+                     <div class="rating">
+                     <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+</div>
+                     <p >$18,750.00 <del>$16,795.00</del>  <span style="border:1px solid black;padding:2px;"> SAVE 10%</span></p>
+          
+                 </div> 
+             </div>
+            
+       
+       <div class="box">  
+                 <div class="top"> <a href="#">
+                     
+                      
+                          <img src="images\submariner.jpg" style="width:100%;height:100%" >
+                     </a>
+                     <h4 class="hov">Buy now</h4>
+                 </div> 
+                 
+                 <div class="bot">
+                 
+                     <h2><em>Submariner</em></h2>
+                     <div class="rating">
+                     <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+</div>
+                     <p >$13,400.00 <del>$12,995.00</del> <span style="border:1px solid black;padding:2px;"> SAVE 3%</span></p>
+                
+                 </div> 
+             </div>
+  
+            <div class="box">  
+                 <div class="top"> <a href="#">
+                     
+                      
+                          <img src="images\Air-king.jpg" style="width:100%;height:100%" >
+                     </a>
+                          <h4 class="hov">Buy now</h4>
+                 </div> 
+                 
+                 <div class="bot">
+                 
+                     <h2><em>Air-king</em></h2>
+                     <div class="rating">
+                     <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+</div>
+                     <p >$6,395.00 <del>$5755,5.00</del> <span style="border:1px solid black;padding:2px;"> SAVE 10%</span></p>
+            
+                 </div> 
+             </div>
+        </div>
+
+ <h2  id="PatekPhilippe" >Patek Philippe</h2>
+        <div class="PatekPhilippe">
+
+            
+             <div class="box">  
+                 <div class="top"> <a href="#">
+                     
+                      
+                          <img src="images\aquanaut.jpg" style="width:100%;height:100%" >
+                     </a>
+                          <h4 class="hov">Buy now</h4>
+                 </div> 
+                 
+                 <div class="bot">
+                 
+                     <h2><em>Aquanaut</em></h2>
+                     <div class="rating">
+                     <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+</div>
+                     <p >$47,900.00 <del>$16,795.00</del>  <span style="border:1px solid black;padding:2px;"> SAVE 10%</span></p>
+                  
+                 </div> 
+             </div>
+        </div>
+          <div id="wrapper">
+        <div>
+            <h3>ABOUT US</h3>
+            <br>
+            <img src="images/picture1.jpg" alt="About|US">
+            <br>
+            <p>Timepiece watches are crafted from the fines detail. Every component is designed, developed and produced in-house to the most exacting standards.</p>
+            <br>
+            <p><a style="text-decoration: none;color:#12883a73" href="">Read more &#187;</a></p>
+        </div>
+        <div>
+            <h3>LINK BLOCK</h3>
+            <ul id="arrow">
+                <li><a style="text-decoration: none" href="https://www.frostnyc.com/products/gold-mens-rolex-datetjust-watch-36mm-blue-dial-jubiliee-band?utm_medium=cpc&utm_source=google&utm_campaign=Google%20Shopping&gclid=Cj0KCQiAjZLhBRCAARIsAFHWpbFZlcFn3xzb5SKuqDRhcc8PFblnOxitM53seXXcjWz1QbCAPEUlpAEaAg2mEALw_wcB"> &#187; Diamond Gold Watches</a></li>
+                <li><a style="text-decoration: none" href="https://www.frostnyc.com/products/gold-rolex-datetjust-watch-36mm-red-dial-jubiliee-band?utm_medium=cpc&utm_source=google&utm_campaign=Google%20Shopping&gclid=Cj0KCQiAjZLhBRCAARIsAFHWpbFw1h2kl8uR9qYfO55fW27t4xhO64FCGzhQAd2zBx_fPfXa7yK49GMaAomMEALw_wcB"> &#187; Gold Rolex</a></li>
+                <li><a style="text-decoration: none" href="https://stockx.com/rolex-datejust-69173-champagne?gclid=Cj0KCQiAjZLhBRCAARIsAFHWpbHu5f_YPU_QqosRIEKNSKFtv10my9JxbHHuWOAuQ1ZarDC_dX5wc0QaAvOfEALw_wcB"> &#187; Rolex Datejust</a></li>
+                <li><a style="text-decoration: none" href="https://stockx.com/rolex-datejust-69173-champagne?gclid=Cj0KCQiAjZLhBRCAARIsAFHWpbHu5f_YPU_QqosRIEKNSKFtv10my9JxbHHuWOAuQ1ZarDC_dX5wc0QaAvOfEALw_wcB"> &#187; Men Rolex</a></li>
+                <li><a style="text-decoration: none" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwinga6vycDfAhWU5HcKHQKgC0AYABAYGgJlZg&ohost=www.google.com&cid=CAESEeD2YzUqqFoIFScVCw58mBcg&sig=AOD64_1DvrkJM_GT1huUBKaUGn3zdkK_Mg&ctype=5&q=&ved=0ahUKEwjouaevycDfAhXQy6QKHQi7ApUQ9aACCFE&adurl="> &#187; Rolex Oyster</a></li>
+                <li><a style="text-decoration: none" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwinga6vycDfAhWU5HcKHQKgC0AYABAkGgJlZg&ohost=www.google.com&cid=CAESEeD2YzUqqFoIFScVCw58mBcg&sig=AOD64_2qar60aaFFhL4CABh0ZDI5Ld7Jdg&ctype=5&q=&ved=0ahUKEwjouaevycDfAhXQy6QKHQi7ApUQwg8IeQ&adurl="> &#187; Gold President Yellow Gold </a></li>
+                <li><a style="text-decoration: none" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwinga6vycDfAhWU5HcKHQKgC0AYABAaGgJlZg&ohost=www.google.com&cid=CAESEeD2YzUqqFoIFScVCw58mBcg&sig=AOD64_3_mYRhnP2AhNz9U7qr88SB5sUNTA&ctype=5&q=&ved=0ahUKEwjouaevycDfAhXQy6QKHQi7ApUQww8IVQ&adurl="> &#187; President Rolex</a></li>
+                <li><a style="text-decoration: none" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwinga6vycDfAhWU5HcKHQKgC0AYABAcGgJlZg&ohost=www.google.com&cid=CAESEeD2YzUqqFoIFScVCw58mBcg&sig=AOD64_3qAM3rkapvqstAN3CvL_SvbN8nnA&ctype=5&q=&ved=0ahUKEwjouaevycDfAhXQy6QKHQi7ApUQwg8IXA&adurl="> &#187; Rolex Men's Datejust</a></li>
+                <li><a style="text-decoration: none" href="https://www.frostnyc.com/products/gold-rolex-mens-watch-datetjust-36mm-grey-dial-jubiliee-band?utm_medium=cpc&utm_source=google&utm_campaign=Google%20Shopping&gclid=Cj0KCQiAjZLhBRCAARIsAFHWpbFQCTmDzrfE1hxSgJKLXvMSUn6TuP1yMerN0Y3YcQxoHM95ly9QvKwaApn5EALw_wcB"> &#187; Diamond Rolex Mens</a></li>
+                <li><a style="text-decoration: none" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwinga6vycDfAhWU5HcKHQKgC0AYABAgGgJlZg&ohost=www.google.com&cid=CAESEeD2YzUqqFoIFScVCw58mBcg&sig=AOD64_3Pvx2d9xmB0Adz8eZYOSTV5PjoLQ&ctype=5&q=&ved=0ahUKEwjouaevycDfAhXQy6QKHQi7ApUQ9aACCG8&adurl="> &#187;Rolex Datejust 36mm</a></li> 
+                <li><a style="text-decoration: none" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwinga6vycDfAhWU5HcKHQKgC0AYABAiGgJlZg&ohost=www.google.com&cid=CAESEeD2YzUqqFoIFScVCw58mBcg&sig=AOD64_1RKZcisawxA1UzYorZ0u5QRvkC0A&ctype=5&q=&ved=0ahUKEwjouaevycDfAhXQy6QKHQi7ApUQww8Icw&adurl="> &#187;Daytona Rainbow</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>FROM THE BLOG</h3>
+            <div class="small">
+                <h3>TimePiece History</h3>
+                <p>Timepiece SA is a Swiss luxury watchmaker. Founded </p>
+                <br>
+                <p><a style="text-decoration: none; color:#12883a73" href="">Read more &#187;</a></p>
+            </div>
+            <div class="small">
+                <h3>TimePiece History</h3>
+                <p>Timepiece SA is a Swiss luxury watchmaker. Founded</p>
+                <br>
+                <p><a style="text-decoration: none; color:#12883a73" href="">Read more &#187;</a></p>
+            </div>
+        </div>
+        <div>
+            <h3>CONTACT US</h3>
+            <div class="small">
+            <p>TEL: xxxx xxxxxxxx</p>
+            <br>
+            <p>Fax: xxxxxxxx</p>
+            <br>
+            <p id="email">Email:<a style="text-decoration: none;color:#12883a73" href="">contact@mydomain.com</a></p>
+            </div>  
+            <div class="small">
+                <h3>NEWSLETTER</h3>
+                <br>
+                <label class="form" for="name"></label>
+                <input type="text" id="name" name="name" placeholder="Name">
+                <br><br>
+                <label class="form" for="email"></label>
+                <input type="text" id="email" name="email" placeholder="Email">
+                <br> <br>
+                <button> <b>Submit</b> </button>
+            </div>
+        </div>
+        <br><br><br> 
+        <p id="thelast"><span id="grey">COPYRIGHT &COPY; 2013-All rights reserved- Timepiece</span></p>
+
+    </div>
+    </body>
+</html>
