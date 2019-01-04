@@ -1,0 +1,171 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/tictoc.css" type="text/css">
+
+
+    
+<script>
+ function startgame(){
+
+    for(var i=1;i<=9;i++){
+  clearbox(i);
+                       }
+     document.turn="X";
+     
+     
+         if(Math.random() <0.5){
+             document.turn="0";
+         }
+          document.winner=null;
+
+
+  setMessage(document.turn + " gets to start.");
+                                 }
+    
+    
+    
+        function setMessage(msg){
+     document.getElementById("message").innerText=msg;
+
+                       }
+    
+    
+
+            function nextMove(square){
+         if(document.winner!=null){
+             
+
+           setMessage(document.winner+"Already won the match");
+
+                 }
+                else if(square.innerText =="" )
+                {
+                   square.innerText =document.turn;
+                  switchTurn(square);
+                      }
+                
+                else
+                {
+                  setMessage("That square is already used");
+                    }
+                                     }
+    
+            function switchTurn(square)
+    {
+
+                if(checkWinner(document.turn))
+                {
+
+                    setMessage("It's over " +document.turn+ " You win the match");
+
+                    document.winner=document.turn;
+
+                }
+                else if(document.turn=="X")
+                {
+                          document.turn="0";
+                    
+                      setMessage("Its "+document.turn+" Turn");
+
+                }
+                else
+                {
+              document.turn="X";
+              setMessage("Its "+document.turn+" Turn");
+
+                }
+
+
+            }
+
+
+    function checkWinner(move)
+    {
+
+        var result=false;
+
+        if (checkRow(1,2,3,move)||
+            checkRow(4,5,6,move)||
+            checkRow(7,8,9,move)||
+            checkRow(1,4,7,move)||
+            checkRow(2,5,8,move)||
+            checkRow(3,6,9,move)||
+            checkRow(1,5,9,move)||
+            checkRow(7,5,3,move))
+            
+        {
+
+            result=true;
+
+                        }
+      
+        return result;
+              }
+
+
+
+
+    function checkRow(a,b,c,move){
+        var result=false;
+        if(getBox(a)==move && getBox(b)==move && getBox(c)==move)
+        {
+
+            result=true;
+}
+       
+        else
+        {
+
+            return result;
+}
+}
+
+    function getBox(number){
+
+        return document.getElementById("s" +number).innerText;
+
+    }
+
+    function clearbox(number){
+
+        document.getElementById("s"+number).innerText ="";
+
+    }
+
+</script>
+
+</head>
+    <body onload="startgame();">
+
+        <center>
+
+            <h1><mark>Tic Tac Toe</mark></h1>
+            <div id="message">messages</div>
+            <table border="50px">
+
+                <tr>
+                <td id="s1" class="Square" onclick="nextMove(this);"></td>
+                 <td  id="s2" class="Square" onclick="nextMove(this);"></td>
+                  <td  id="s3" class="Square" onclick="nextMove(this);"></td>
+              </tr>
+
+              <tr>
+                <td id="s4" class="Square" onclick="nextMove(this);"></td>
+                 <td id="s5" class="Square" onclick="nextMove(this);"></td>
+                  <td id="s6" class="Square" onclick="nextMove(this);"></td>
+                 </tr>
+
+           <tr>
+                <td id="s7" class="Square" onclick="nextMove(this);"></td>
+                 <td id="s8" class="Square" onclick="nextMove(this);"></td>
+                  <td id="s9" class="Square" onclick="nextMove(this);"></td>
+                 </tr>
+            </table>
+
+            <a href="javascript:startgame();"><input type="button" value="Start Over"></a>
+
+        </center>
+<h3></h3>
+    </body>
+
+    </html>
