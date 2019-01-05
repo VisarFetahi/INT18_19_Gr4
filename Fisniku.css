@@ -78,7 +78,6 @@
         .dropdown-content a
         {
             background-color:rgb(34,34,34);
-            border-right:grey solid 1px;
             transition: width 2s;
             text-decoration:none;
             display:block;
