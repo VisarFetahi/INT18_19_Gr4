@@ -1,0 +1,27 @@
+#main3{
+  margin-top:50px;
+  padding-top:10px;
+  vertical-align: top;
+  padding-left:100px;
+}
+  #main3 div{
+      width: 600px;
+      height:350px;
+      display: inline-block;
+      vertical-align: top;
+  }
+  #main3 div h1{
+      font-size:36px;
+      color:rgb(223, 217, 217);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular','Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  #main3 div h3{
+    font-size:26px;
+    color:#8d8d8d;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular','Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  #main3 div p{
+      margin: 20px 0px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular','Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+ 
