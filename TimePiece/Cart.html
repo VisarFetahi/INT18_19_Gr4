@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>cart</title>
+         <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="css/Cart.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rufina">
+        <link rel="stylesheet" href="css/Fjolla.css">
+           <link rel="stylesheet" href="css/generalcode.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">   
+         <link rel="stylesheet" href="css/Fisniku.css">
+   
+   
+  <script src="scripts/cartscript.js"></script>
+   
+
+   
+ 
+    </head>
+<body onload="fotot()">
+
+    <!-- Fisniku-->
+         <div class="Fisniku">
+            <div class="topbar" >
+                <div class="contactNr">
+                    Call Us: xxxxxxxxxxxxxxxxxxxx
+                </div>
+                <div class="contactEm" onClick="location.href='https://mail.google.com/mail'" style="cursor:pointer;">
+                    Email Us: contact@mydomain.com
+                </div>    
+                <div style=" display:inline-block;float:right;"> 
+                <form class="searchbar" action="">
+                   
+                    <input type="text" placeholder="" name="search">
+                    <button type="submit">
+                        <span>
+                                    <i class="fa fa-search" aria-hidden="true" style="width:2px;height:2px;right:7px;position:relative;"></i>
+                        </span>
+                    </button>
+                
+                </form>
+                    </div> 
+            </div>
+            <div class="menu">
+                <div class="logo">
+                    <a href="Home%20page.html"><img src="images\timepiece.png" style="margin-left:50px;width:95px;height:95px;position:absolute" alt="logo"> </a>
+                </div> 
+                
+                <div class="main-nav">
+                    
+                    
+                    <ul>
+                        <li><a class="list" href="Home Page.html" >HOMEPAGE </a></li>
+                    </ul>
+                        
+                        
+           
+                    <ul >
+                        <li>
+                           <a class="list" href="Our Products.html">OUR PRODUCTS</a>
+                          <div class="dropdown-content">
+                          <a href="Our Products.html#Rolex">Rolex</a>
+                          <a href="Our Products.html#PatekPhilippe">Patek Philippe</a>
+                          <a href="Our Products.html#Hublot">Hublot</a>
+                          <a href="Our Products.html#VacheronConstantin">Vacheron Constantin</a>
+                          </div>
+                    
+                        
+                        </li>
+                       </ul>
+                        
+                        
+                        
+                        
+    
+                      
+                <ul>
+                    <li><a class="list"  href="About Us.html">ABOUT US</a>
+                       <div class="dropdown-content">
+                      <a href="Privacy Policy.html">Privacy Policy</a>
+                       <a href="Terms Of Service.html">Terms of Service</a>
+                       <a href="Refund Policy.html">Refund Policy</a>
+                      </div>
+                    </li>
+                </ul>    
+                 
+                
+                
+                <ul>
+                    <li><a class="list" href="Sign In.html" target="_blank">LOGIN</a>
+                      <div class="dropdown-content">
+                      <a href="Sign In.html" target="_blank">Signin</a>
+                      <a href="Sign Up.html" target="_blank">Signup</a>
+                      </div>
+                    </li> 
+                </ul>   
+                    
+                
+                <ul>
+                   <li>
+                      <a class="list" href="FAQ.html">FAQ</a>
+                   </li>
+                </ul> 
+                
+                
+                
+                <ul>
+                    <li>
+                       <a class="list" href="Cart.html"  id="active"><i class="fas fa-shopping-cart fa-1x"></i></a>
+                    </li> 
+                </ul>
+                    
+                    
+                    
+                    
+             </div>
+             
+         </div>
+        
+        
+       </div> 
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    <div class="hiddentext"><h1>There are no items in your cart</h1>
+    
+        <div id="continueshopping" onClick="location.href='Our Products.html'"><p>Continue shopping<p></div>
+    
+    </div>
+   
+   <div class="cartbox">
+   <div class="productbox">
+       
+       
+       <div> <img  class="product" src=""  ></div>
+   
+   
+   
+   
+   
+   </div>
+   <div class="price">
+       <div class="pricebox">
+           <h1 ><em class="name"></em></h1>
+       <h3>Brand:  <span class="brand"></span></h3>
+       <h1><span class="cmimi"></span>USD</h1>
+       </div>
+       <div class="productbutton"><button onClick="decrement()">-</button><div  ><form ><input  type="text"  class="textbox" value="1" ></form></div><button  onClick="increment()">+</button></div>
+   
+   
+   
+       <script>
+            var n = 1;
+         
+function increment(){
+
+   
+   
+    if(n>=0){n++
+   
+    document.getElementsByClassName("textbox")[0].value=n;
+    
+    var x = document.getElementsByClassName("cmimi2")[0].textContent;
+      document.getElementsByClassName("cmimi1")[0].innerHTML=x*n;     
+    }
+
+  
+    
+    
+}
+           
+function decrement(){
+
+
+  
+   if(n>0){--n
+   
+   document.getElementsByClassName("textbox")[0].value=n;
+    
+    var x = document.getElementsByClassName("cmimi2")[0].textContent;
+      document.getElementsByClassName("cmimi1")[0].innerHTML=x*n;  
+   }
+
+  
+  
+}
+           
+           
+           
+       </script>
+   
+   </div>
+    <div class="info">
+        <div class="priceinfo"><h3>Subtotal:  $<span class="cmimi1"></span><span class="cmimi2" style="display:none;">800</span>,00USD</h3> <br>
+
+<p>USA between 5-10 days from shipping date;
+<br>
+CANADA between 10-20 days from shipping date;
+<br>
+EUROPE between 10-20 days from shipping date;
+<br>
+AUSTRALIA between 10-20 days from shipping date;
+<br>
+ALL OTHERS: between 10-30 days from shipping date; .</p>
+<i> For orders shipped outside of the Kosovo,
+    customers are responsible for paying all import duties and taxes.</i>
+        
+        
+        
+        </div>
+        
+        
+        
+        
+        
+      <div id="checkout" onClick="location.href='Our Products.html'"><p>Checkout<p></div>
+        <div id="continue" onClick="location.href='Our Products.html'"><p>Continue shopping<p></div>
+   
+   </div>
+ 
+
+   
+   
+   
+   
+   </div>
+   
+   
+   
+   
+   
+   
+       
+     
+        <!-- Fjolla AboutUS -->
+          <div style="width:100%;height:auto;background-color:rgb(34,34,34); ">
+    <div id="wrapper">
+        <div>
+            <h3>ABOUT US</h3>
+            <br>
+            <img src="images/picture1.jpg" alt="About|US">
+            <br>
+            <p>Timepiece watches are crafted from the fines detail. Every component is designed, developed and produced in-house to the most exacting standards.</p>
+            <br>
+            <p><a style="text-decoration: none;color:rgb(124,156,55);font-family:'Niramit','Sorts Mill Goudy','sans serif';
+     font-size:16px;" href="">Read more &#187;</a></p>
+        </div>
+        <div>
+            <h3>LINK BLOCK</h3>
+            <ul id="arrow">
+                <li><a style="text-decoration: none" href="https://www.frostnyc.com/products/gold-mens-rolex-datetjust-watch-36mm-blue-dial-jubiliee-band?utm_medium=cpc&utm_source=google&utm_campaign=Google%20Shopping&gclid=Cj0KCQiAjZLhBRCAARIsAFHWpbFZlcFn3xzb5SKuqDRhcc8PFblnOxitM53seXXcjWz1QbCAPEUlpAEaAg2mEALw_wcB"><span style="color: rgb(102,102,102)">&#187;</span>  Diamond Gold Watches</a></li>
+                <li><a style="text-decoration: none" href="https://www.frostnyc.com/products/gold-rolex-datetjust-watch-36mm-red-dial-jubiliee-band?utm_medium=cpc&utm_source=google&utm_campaign=Google%20Shopping&gclid=Cj0KCQiAjZLhBRCAARIsAFHWpbFw1h2kl8uR9qYfO55fW27t4xhO64FCGzhQAd2zBx_fPfXa7yK49GMaAomMEALw_wcB"><span style="color: rgb(102,102,102)">&#187;</span>   Gold Rolex</a></li>
+                <li><a style="text-decoration: none" href="https://stockx.com/rolex-datejust-69173-champagne?gclid=Cj0KCQiAjZLhBRCAARIsAFHWpbHu5f_YPU_QqosRIEKNSKFtv10my9JxbHHuWOAuQ1ZarDC_dX5wc0QaAvOfEALw_wcB"><span style="color: rgb(102,102,102)">&#187;</span>  Rolex Datejust</a></li>
+                <li><a style="text-decoration: none" href="https://stockx.com/rolex-datejust-69173-champagne?gclid=Cj0KCQiAjZLhBRCAARIsAFHWpbHu5f_YPU_QqosRIEKNSKFtv10my9JxbHHuWOAuQ1ZarDC_dX5wc0QaAvOfEALw_wcB"><span style="color: rgb(102,102,102)">&#187;</span>  Men Rolex</a></li>
+                <li><a style="text-decoration: none" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwinga6vycDfAhWU5HcKHQKgC0AYABAYGgJlZg&ohost=www.google.com&cid=CAESEeD2YzUqqFoIFScVCw58mBcg&sig=AOD64_1DvrkJM_GT1huUBKaUGn3zdkK_Mg&ctype=5&q=&ved=0ahUKEwjouaevycDfAhXQy6QKHQi7ApUQ9aACCFE&adurl="><span style="color: rgb(102,102,102)">&#187;</span>   Rolex Oyster</a></li>
+                <li><a style="text-decoration: none" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwinga6vycDfAhWU5HcKHQKgC0AYABAkGgJlZg&ohost=www.google.com&cid=CAESEeD2YzUqqFoIFScVCw58mBcg&sig=AOD64_2qar60aaFFhL4CABh0ZDI5Ld7Jdg&ctype=5&q=&ved=0ahUKEwjouaevycDfAhXQy6QKHQi7ApUQwg8IeQ&adurl="><span style="color: rgb(102,102,102)">&#187;</span>   Gold President Yellow Gold </a></li>
+                <li><a style="text-decoration: none" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwinga6vycDfAhWU5HcKHQKgC0AYABAaGgJlZg&ohost=www.google.com&cid=CAESEeD2YzUqqFoIFScVCw58mBcg&sig=AOD64_3_mYRhnP2AhNz9U7qr88SB5sUNTA&ctype=5&q=&ved=0ahUKEwjouaevycDfAhXQy6QKHQi7ApUQww8IVQ&adurl="><span style="color: rgb(102,102,102)">&#187;</span>   President Rolex</a></li>
+                <li><a style="text-decoration: none" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwinga6vycDfAhWU5HcKHQKgC0AYABAcGgJlZg&ohost=www.google.com&cid=CAESEeD2YzUqqFoIFScVCw58mBcg&sig=AOD64_3qAM3rkapvqstAN3CvL_SvbN8nnA&ctype=5&q=&ved=0ahUKEwjouaevycDfAhXQy6QKHQi7ApUQwg8IXA&adurl="><span style="color: rgb(102,102,102)">&#187;</span>   Rolex Men's Datejust</a></li>
+                <li><a style="text-decoration: none" href="https://www.frostnyc.com/products/gold-rolex-mens-watch-datetjust-36mm-grey-dial-jubiliee-band?utm_medium=cpc&utm_source=google&utm_campaign=Google%20Shopping&gclid=Cj0KCQiAjZLhBRCAARIsAFHWpbFQCTmDzrfE1hxSgJKLXvMSUn6TuP1yMerN0Y3YcQxoHM95ly9QvKwaApn5EALw_wcB"><span style="color: rgb(102,102,102)">&#187;</span>   Diamond Rolex Mens</a></li>
+                <li><a style="text-decoration: none" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwinga6vycDfAhWU5HcKHQKgC0AYABAgGgJlZg&ohost=www.google.com&cid=CAESEeD2YzUqqFoIFScVCw58mBcg&sig=AOD64_3Pvx2d9xmB0Adz8eZYOSTV5PjoLQ&ctype=5&q=&ved=0ahUKEwjouaevycDfAhXQy6QKHQi7ApUQ9aACCG8&adurl="><span style="color: rgb(102,102,102)">&#187;</span>   Rolex Datejust 36mm</a></li> 
+                <li><a style="text-decoration: none" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwinga6vycDfAhWU5HcKHQKgC0AYABAiGgJlZg&ohost=www.google.com&cid=CAESEeD2YzUqqFoIFScVCw58mBcg&sig=AOD64_1RKZcisawxA1UzYorZ0u5QRvkC0A&ctype=5&q=&ved=0ahUKEwjouaevycDfAhXQy6QKHQi7ApUQww8Icw&adurl="><span style="color: rgb(102,102,102)">&#187;</span>   Daytona Rainbow</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>FROM THE BLOG</h3>
+            <div class="small">
+                <h3>TimePiece History</h3>
+                <p>Timepiece SA is a Swiss luxury watchmaker. Founded </p>
+                <br>
+                <p><a style="text-decoration: none;color:rgb(124,156,55)" href="">Read more &#187;</a></p>
+            </div>
+            <div class="small">
+                <div style="width:auto;height:auto;" ><a  onClick="location.href='game.html'"><img src="images/game.png" style="width:100px;height:100px;cursor:pointer;"  ></a></div>
+                <p><a style="text-decoration: none;color:rgb(124,156,55)" href="game.html" target="_blank">play game &#187;</a></p>
+            </div>
+        </div>
+        <div>
+            <h3>CONTACT US</h3>
+            <div class="small">
+            <p>TEL: xxxx xxxxxxxx</p>
+            <br>
+            <p>Fax: xxxxxxxx</p>
+            <br>
+            <p id="email">Email:<a style="text-decoration:none;color:rgb(124,156,55)" href="">contact@mydomain.com</a></p>
+            </div>  
+            <div class="small">
+                <h3>NEWSLETTER</h3>
+                <br>
+                <label class="form" for="name"></label>
+                <input type="text" id="name" name="name" placeholder="  Name">
+                <br><br>
+                <label class="form" for="email"></label>
+                <input type="text" id="email" name="email" placeholder="  Email">
+                <br> <br>
+                <button> <b>Submit</b> </button>
+            </div>
+        </div>
+        <br><br><br>
+        <p id="thelast"><span id="grey">COPYRIGHT &COPY; 2019-All rights reserved- Timepiece<abbr title="TIME PIECE">TP</abbr></span></p>
+    </div>
+         
+   </div>
+      
+            
+
+   
+   
+   
+   
+   
+   
+
+      
+    
+    
+</body>
+</html>

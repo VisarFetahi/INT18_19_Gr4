@@ -1,0 +1,71 @@
+body
+        {
+            font-family:Source Sans Pro;
+ 
+        
+    }
+      h1{
+        font-size:50px;
+          }
+    
+       .Square{
+           width:100px;
+           height:100px;
+           text-align:center;
+           font-size:50px;
+          font-weight:bold;
+
+}
+    .Square:hover
+    {
+       
+    cursor: pointer;
+        border: 2px solid red;
+     
+    }
+       #message{
+
+text-align:center;
+font-size:29px;
+    margin: 10px;
+    font-weight: bold;
+           color: aliceblue;
+
+
+              }
+   
+    input 
+    {
+        margin: 10px;
+        font-size: 19px;
+        border-radius: 12px;
+      text-align: center;
+        font-weight: bold;
+        color: black;
+        background-color: green;
+    }
+    input:hover
+    {
+        font-size: 24px;
+        border: 5px solid green;
+        border-radius: 20%;
+        cursor: pointer;
+        transition: .5s;
+    }
+    table
+    {
+       
+            
+        
+            background: linear-gradient(-45deg);
+      
+            animation: Gradient 15s ease infinite;
+        }
+
+@keyframes Gradient {
+    0%   {top: 0px; left: 0px; background: #993333;}
+    25%  {top: 0px; left: 100px; background: #4d4d33;}
+    50%  {top: 100px; left: 100px; background: #993300;}
+    75%  {top: 100px; left: 0px; background: #006666;}
+    100% {top: 0px; left: 0px; background: #993333;}
+    }

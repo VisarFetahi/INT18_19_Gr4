@@ -1,0 +1,307 @@
+<html>
+<head>
+<style>
+    body
+        {
+            font-family:Source Sans Pro;
+ 
+        
+    }
+      h1{
+        font-size:50px;
+          }
+    
+       .Square{
+           width:100px;
+           height:100px;
+           text-align:center;
+           font-size:50px;
+          font-weight:bold;
+
+}
+    .Square:hover
+    {
+       
+    cursor: pointer;
+        border: 2px solid red;
+     
+    }
+       #message{
+
+text-align:center;
+font-size:29px;
+    margin: 10px;
+    font-weight: bold;
+           color: aliceblue;
+
+
+              }
+    .eclise2
+    {
+      
+        float: right;
+    }
+   eclise1
+    {
+        float: left;
+    }
+    input 
+    {
+        margin: 10px;
+        font-size: 19px;
+        border-radius: 12px;
+      text-align: center;
+        font-weight: bold;
+        color: black;
+        background-color: green;
+    }
+    input:hover
+    {
+        font-size: 24px;
+        border: 5px solid green;
+        border-radius: 20%;
+        cursor: pointer;
+        transition: .5s;
+    }
+    table
+    {
+       
+            
+        
+            background: linear-gradient(-45deg);
+      
+            animation: Gradient 15s ease infinite;
+        }
+
+@keyframes Gradient {
+    0%   {top: 0px; left: 0px; background: #993333;}
+    25%  {top: 0px; left: 100px; background: #4d4d33;}
+    50%  {top: 100px; left: 100px; background: #993300;}
+    75%  {top: 100px; left: 0px; background: #006666;}
+    100% {top: 0px; left: 0px; background: #993333;}
+    }
+    
+#tx
+    {
+        float: right;
+        position: relative;
+        top: 29%;
+        right: 10%;
+    }
+  
+    </style>
+
+
+
+<script>
+    
+        
+ function startgame(){
+
+    for(var i=1;i<=9;i++){
+  clearbox(i);
+                       }
+     document.turn="X";
+     
+     
+         if(Math.random() <0.5){
+             document.turn="O";
+         }
+          document.winner=null;
+
+
+  setMessage(document.turn + " gets to start.");
+                                 }
+    
+    
+    
+        function setMessage(msg){
+     document.getElementById("message").innerText=msg;
+
+                       }
+    
+    
+
+            function nextMove(square){
+         if(document.winner!=null){
+             
+
+           setMessage(document.winner+"Already won the match");
+
+                 }
+                else if(square.innerText =="" )
+                {
+                   square.innerText =document.turn;
+                  switchTurn(square);
+                      }
+                
+                else
+                {
+                  setMessage("That square is already used");
+                    }
+                                     }
+    
+            function switchTurn(square)
+    {
+
+                if(checkWinner(document.turn))
+                {
+
+                    setMessage("It's over " +document.turn+ " You win the match");
+
+                    document.winner=document.turn;
+
+                }
+                else if(document.turn=="X")
+                {
+                          document.turn="O";
+                    
+                      setMessage("Its "+document.turn+" Turn");
+
+                }
+                else
+                {
+              document.turn="X";
+              setMessage("Its "+document.turn+" Turn");
+
+                }
+
+
+            }
+
+
+    function checkWinner(move)
+    {
+
+        var result=false;
+
+        if (checkRow(1,2,3,move)||
+            checkRow(4,5,6,move)||
+            checkRow(7,8,9,move)||
+            checkRow(1,4,7,move)||
+            checkRow(2,5,8,move)||
+            checkRow(3,6,9,move)||
+            checkRow(1,5,9,move)||
+            checkRow(7,5,3,move))
+            
+        {
+
+            result=true;
+
+                        }
+      
+        return result;
+              }
+
+
+
+
+    function checkRow(a,b,c,move){
+        var result=false;
+        if(getBox(a)==move && getBox(b)==move && getBox(c)==move)
+        {
+
+            result=true;
+}
+       
+        else
+        {
+
+            return result;
+}
+}
+
+    function getBox(number){
+
+        return document.getElementById("s" +number).innerText;
+
+    }
+
+    function clearbox(number){
+
+        document.getElementById("s"+number).innerText ="";
+
+    }
+
+</script>
+
+</head>
+    <body onload="startgame();">
+
+   
+  <script type="text/javascript">
+              
+              
+                   function dayandnight(){
+     var current = new Date();
+            var day_night = current.getHours();
+                      if (day_night < 16 &&day_night > 5){
+                       //Day
+                       var bodyColor = document.getElementsByTagName("BODY")[0];
+         bodyColor.style.backgroundColor = "darkblue";
+         document.write("<h2>Day<h2>");
+                      }
+                      else{
+                       //Night
+                       var bodyColor = document.getElementsByTagName("BODY")[0];
+         bodyColor.style.backgroundColor = "darkred";
+         document.write("<h2>Night<h2>");
+                      }
+                  }
+                dayandnight();
+        </script>
+        <center>
+            
+<svg height="150" width="500">
+  <defs>
+    <linearGradient id="grad1" x1="10%" y1="100%" x2="100%" y2="0%">
+      <stop offset="10%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="230" cy="70" rx="180" ry="65" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="45" font-family="Verdana" x="95" y="86">Tic Tac Toe</text>
+  Sorry, your browser does not support inline SVG.
+</svg>
+            
+ 
+             
+            <div id="message"><mark>messages</mark></div>
+            <table border="50px">
+
+                <tr>
+                <td id="s1" class="Square" onclick="nextMove(this);"></td>
+                 <td  id="s2" class="Square" onclick="nextMove(this);"></td>
+                  <td  id="s3" class="Square" onclick="nextMove(this);"></td>
+              </tr>
+
+              <tr>
+                <td id="s4" class="Square" onclick="nextMove(this);"></td>
+                 <td id="s5" class="Square" onclick="nextMove(this);"></td>
+                  <td id="s6" class="Square" onclick="nextMove(this);"></td>
+                 </tr>
+
+           <tr>
+                <td id="s7" class="Square" onclick="nextMove(this);"></td>
+                 <td id="s8" class="Square" onclick="nextMove(this);"></td>
+                  <td id="s9" class="Square" onclick="nextMove(this);"></td>
+                 </tr>
+            </table>
+
+            <a href="javascript:startgame();"><input type="button" value="Start Over"></a>
+
+
+        </center>
+            <svg class="eclise1" height="150" width="500">
+  <ellipse cx="240" cy="50" rx="210" ry="30" style="fill:yellow" />
+  <ellipse cx="220" cy="50" rx="190" ry="20" style="fill:darkred" /> <text fill="#ffffff" font-size="29" font-family="Verdana" x="75" y="56">Play with Friends</text>
+  Sorry, your browser does not support inline SVG.
+</svg>
+                 <svg class="eclise2" height="150" width="500">
+  <ellipse cx="240" cy="50" rx="210" ry="30" style="fill:yellow" />
+  <ellipse cx="220" cy="50" rx="190" ry="20" style="fill:darkred" /> <text fill="#ffffff" font-size="29" font-family="Verdana" x="75" y="56">Play with Family</text>
+  Sorry, your browser does not support inline SVG.
+</svg>
+    </body>
+
+    </html>
