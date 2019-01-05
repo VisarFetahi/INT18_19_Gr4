@@ -1,0 +1,50 @@
+<div class="content-wrapper">
+            <img src="darkbackground.jpg"alt="backgroundimage">
+            <div class="text-wrapper">
+                <h2>“Time is a created thing. 
+                <br> 
+                To say 'I don't have time,' is like saying, 'I don't want to.”
+                <br> 
+                    ? Lao Tzu</h2>
+            </div>
+        </div>
+       <div id="main">
+            <img src="12.jpg" alt="Our Founding Spirit">
+            <div>
+            <h1>Our Founding Spirit</h1>
+            <br>
+            <h3>Perpetual is more than a word on a dial</h3>
+            <br>
+            <p>Perpetual.For nearly a century, the word has been written on every Rolex Oyster watcch.But Perpetual is more than a word on a dial.It is a pholosophy- an unceasing quest for exellence, to explore and to share human knowledge to build a better world.
+                <br>    <br>
+            It is based on a fundamental belief in unlimited human potential, in continuous improvement, in always pushing the boundaries and taking the long-term view.Our watches are build to last.So is our contribution to future generations</p>
+        </div>
+    </div>
+<div id="main1">
+        <div>
+        <h1>Our Mentor and Protégé</h1>
+        <br>
+        <h3 >A Chance of a Lifetime</h3>
+        <br>
+        <p> Our Mentor and Protégé Arts Initialtive contributes to global culture by helping ensure that the world's artistic heritage is passed on to the next generation.
+            <br> <br>
+        The whole idea is based on contribution of the humanity globaly by art. 
+        </p>
+    </div>
+    <img src="13.jpg" alt="Our Mentor and Protégé">
+</div>
+<div id="main2">
+        <img src="3.jpg" alt="Tested to Extremes">
+        <div>
+        <h1>Tested to extremes</h1>
+        <br>
+        <h3 >Tried and Tested</h3>
+        <br>
+        <p> Few companies have been so consistently identified with the pursuit of excellence,the quest for the absolute, the discovery of original approaches and innovative solutions.
+            <br> <br>
+        Watches have proved themselves from the star in the most extreme condition imaginabe-from the depths of the deepest oceand to the summits of the highest mountains, in the air and the race track.
+            <br>  <br> 
+        And to ensure that all TimePiece Watches can live up to these high expectations, every single one is tested to extremes before it is allowed to leave the TimePiece site.
+        </p>
+    </div>
+</div>
